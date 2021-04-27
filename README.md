@@ -1,5 +1,16 @@
 # 6 DNA app
 
+1. [Enlaces ](#schema1)
+2. [Título ](#schema2)
+3. [Entrada de texto](#schema3)
+4. [Imprimimos el DNA de entrada](#schema4)
+5. [Contar los nucleótidos](#schema5)
+
+
+<hr>
+
+<a name="schema1"></a>
+
 # 1. Importamos librerías
 ~~~python
 import pandas as pd
@@ -8,8 +19,9 @@ import streamlit as st
 import altair as alt
 from PIL import Image
 ~~~
+<hr>
 
-
+<a name="schema2"></a>
 
 # 2. Título 
 Cargamos la imagen.
@@ -27,6 +39,10 @@ This app counts the nucleotide composition of query DNA!
 """)
 ~~~
 
+<hr>
+
+<a name="schema3"></a>
+
 # 3.Entrada de texto
 Texto de entrada.
 ~~~python
@@ -43,11 +59,20 @@ st.write("""
 ***
 """)
 ~~~
+<hr>
+
+<a name="schema4"></a>
+
 # 4. Imprimimos el DNA de entrada
 ~~~python
 st.header('INPUT (DNA Query)')
 sequence
 ~~~
+
+<hr>
+
+<a name="schema5"></a>
+
 # 5. Contar los nucleótidos
 ~~~python
 st.header('OUTPUT (DNA Nucleotide Count)')
